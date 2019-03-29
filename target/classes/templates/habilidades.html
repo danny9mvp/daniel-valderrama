@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+<title>Daniel Valderrama</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+.card-img-top {
+	width: 100%;
+	height: 15vw;
+	object-fit: fill;
+}
+.carousel-caption{
+	opacity: .85;
+}
+h5{
+	opacity: none;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Conoce a Daniel</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Inicio </a></li>
+					<li class="nav-item active"><a class="nav-link"
+						href="/habilidades"> <span class="sr-only">(current)</span>
+							Mis habilidades
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="/acercade">Más
+							sobre mí</a></li>
+					<li class="nav-item"><a class="nav-link" href="/contacto">Contáctame</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<header class="jumbotron my-4">		
+			<h1 class="text-center">Habilidades profesionales</h1>
+		</header>
+		<div class="row text-center my-4 border-bottom">
+			<div class="col-lg-3 col-md-6 mb-4">
+				<div class="card h-100">
+					<img class="card-img-top"
+						src="https://revistadigital.inesem.es/informatica-y-tics/files/2015/10/inesem-java-1024x768.jpg"
+						alt="">
+					<div class="card-body">
+						<h4 class="card-title">Java</h4>
+						<p class="card-text">Mi lenguaje de programación estandarte y
+							por tanto en el que tengo más experiencia.</p>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn btn-success"
+							data-toggle="popover" title="Mi experiencia en Java"
+							data-content="Java SE, JSP/Servlets, JSF 2.0, JPA 2.1, Hibernate, Spring boot, Apache Maven."
+							data-trigger="focus" data-placement="bottom">Más
+							información</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 mb-4">
+				<div class="card h-100">
+					<img class="card-img-top"
+						src="data:image/png;base64,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"
+						alt="">
+					<div class="card-body">
+						<h4 class="card-title">Ruby</h4>
+						<p class="card-text">He desarrollado pequeñas aplicaciones web
+							en este lenguaje de programación.</p>
+					</div>
+					<div class="card-footer">
+						<button class="btn btn-success" data-toggle="popover"
+							title="Mi experiencia en Ruby"
+							data-content="Ruby nativo, Ruby On Rails." data-trigger="focus"
+							data-placement="bottom">Más información</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 mb-4">
+				<div class="card h-100">
+					<img class="card-img-top"
+						src="http://www.cantabriatic.com/wp-content/uploads/2015/06/javascript.png"
+						alt="">
+					<div class="card-body">
+						<h4 class="card-title">JavaScript</h4>
+						<p class="card-text">Poseo un dominio medio y he utilizado sus
+							librerías utilitarias más conocidas.</p>
+					</div>
+					<div class="card-footer">
+						<button class="btn btn-success" data-toggle="popover"
+							title="Mi experiencia en JavaScript"
+							data-content="JavaScript nativo, jQuery, Angular.js, Node.js."
+							data-trigger="focus" data-placement="bottom">Más
+							información</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 mb-4">
+				<div class="card h-100">
+					<img class="card-img-top"
+						src="https://software.3metas.com/wp-content/uploads/2014/04/sql2-compressed-1.jpg"
+						alt="">
+					<div class="card-body">
+						<h4 class="card-title">SQL</h4>
+						<p class="card-text">He trabajo con diversos motores de Bases
+							de datos relacionales SQL.</p>
+					</div>
+					<div class="card-footer">
+						<button class="btn btn-success" data-toggle="popover"
+							title="Mi experiencia en SQL"
+							data-content="PostgreSQL, MySQL, Microsoft SQL Server, Java Derby DB, Oracle DB 10g/11g."
+							data-trigger="focus" data-placement="bottom">Más
+							información</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-lg-4 col-md-6 mb-4">
+				<div class="card h-100">
+					<img class="card-img-top"
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEr8biqx0JZqaNFk-jhOytp7Hr-r0nnUymGd5Ian6SNh8gVwLr"
+						alt="">
+					<div class="card-body">
+						<h4 class="card-title">Ionic framework</h4>
+						<p class="card-text">Una tecnología relativamente novedosa
+							para el desarrollo de aplicaciones móviles híbridas.</p>
+					</div>
+					<div class="card-footer">
+						<button class="btn btn-success" data-toggle="popover"
+							title="Mi experiencia en ionic"
+							data-content="Ionic v3-v4, Apache Cordova, RESTful API."
+							data-trigger="focus" data-placement="bottom">Más
+							información</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mb-4">
+				<div class="card h-100">
+					<img class="card-img-top"
+						src="https://codegreencreative.com/img/heroku-logo.jpg" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Heroku</h4>
+						<p class="card-text">Es un entorno PaaS (Platform as a
+							Service) para montar aplicaciones web accesibles desde cualquier
+							lugar.</p>
+					</div>
+					<div class="card-footer">
+						<button class="btn btn-success" data-toggle="popover"
+							title="Mi experiencia en Heroku"
+							data-content="Heroku PostgreSQL, Heroku Java, Heroku CLI."
+							data-trigger="focus" data-placement="bottom">Más
+							información</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mb-4">
+				<div class="card h-100">
+					<img class="card-img-top"
+						src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Github</h4>
+						<p class="card-text">Todo desarrollador debe plantearse como indispensable manejar 
+						una plataforma de versionamiento y en mi
+						caso elegí Github.</p>
+					</div>
+					<div class="card-footer">
+						<button class="btn btn-success" data-toggle="popover"
+							title="Mi experiencia en Heroku"
+							data-content="Manejo de Git Command Line Interface."
+							data-trigger="focus" data-placement="bottom">Más
+							información</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row my-4">
+			<div class="col-12">
+				<h1 class="text-center">Proyectos desarrollados</h1>
+			</div>
+		</div>
+		<div class="row my-4 text-center">			
+			<div id="carouselExampleIndicators" class="carousel slide"
+				data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0"
+						class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>					
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="./img/traductor.jpg" alt="traductor.jpg">
+						<div class="carousel-caption d-none d-md-block bg-dark">
+							<h5>Prototipo Traductor en Tiempo Real para la Población Sorda en Colombia</h5>
+							<p>Fue mi tesis de grado para aspirar al título de Tecnólogo en Sistematización de Datos en la Universidad
+							 Distrital, consistiendo en una aplicación web junto a un sensor Leap Motion para capturar expresiones del
+							 lenguaje de señas colombiano y traducirlas a voz mediante un API Text to Speech. Fue nominada a Tesis Laureada.
+							 Las tecnologías implementadas fueron: Node.js, jQuery, MongoDB, Leap JavaScript SDK y ResponsiveVoice.js.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="./img/ReciclARTE.jpg" alt="ReciclARTE.jpg">
+						<div class="carousel-caption d-none d-md-block bg-dark">
+							<h5>ReciclARTE</h5>
+							<p>Proyecto desarrollado para la localidad de Engativá en el marco del programa PIENSA DIGITAL.
+							Las tecnologías implementadas fueron: Java, Jersey REST, JPA 2.1, PostgreSQL, Ionic v3.0 y Heroku.</p>
+						</div>
+					</div>					
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators"
+					role="button" data-slide="prev"> <span
+					class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+					class="sr-only">Previous</span>
+				</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
+					role="button" data-slide="next"> <span
+					class="carousel-control-next-icon" aria-hidden="true"></span> <span
+					class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<footer class="py-5 bg-dark">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; Daniel
+				Valderrama 2019</p>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function() {
+
+			$('.btn').popover({
+				trigger : "focus"
+			});
+
+		});
+	</script>
+</body>
+</html>

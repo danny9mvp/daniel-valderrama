@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+<title>Daniel Valderrama</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+.card-img-top {
+	width: 100%;
+	height: 15vw;
+	object-fit: fill;
+}
+
+body {
+	background-color: white;
+}
+
+.contact {
+	padding: 4%;
+	height: 400px;
+}
+
+.col-md-3 {
+	background: #33cc33;
+	padding: 4%;
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+
+.contact-info {
+	margin-top: 10%;
+}
+
+.contact-info img {
+	margin-bottom: 15%;
+}
+
+.contact-info h2 {
+	margin-bottom: 10%;
+}
+
+.col-md-9 {
+	background: #e6e6e6;
+	padding: 3%;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form label {
+	font-weight: 600;
+}
+
+.contact-form button {
+	width: 25%;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Conoce a Daniel</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Inicio </a></li>
+					<li class="nav-item"><a class="nav-link" href="/habilidades">Mis
+							habilidades</a></li>
+					<li class="nav-item"><a class="nav-link" href="/acercade">Más
+							sobre mí</a></li>
+					<li class="nav-item active"><a class="nav-link"
+						href="/contacto"> <span class="sr-only">(current)</span>Contáctame
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container contact">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="contact-info">
+					<img src="https://image.ibb.co/kUASdV/contact-image.png"
+						alt="image" />
+					<h2>Déjame un mensaje</h2>
+					<h4>¡Será un placer escuchar lo que tienes que decir!</h4>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="contact-form">
+					<form action="http://formspree.io/danny9mvp@gmail.com" enctype="text/plain" method="POST">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="fname">Nombre:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="fname"
+									placeholder="Nombre" name="name">
+							</div>
+						</div>
+						<input type="hidden" name="_subject" value="Saludo">						
+						<div class="form-group">
+							<label class="control-label col-sm-6" for="email">Correo
+								electrónico:</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="email"
+									placeholder="Correo electrónico" name="_replyto">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4" for="comment">Tu comentario:</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" rows="5" id="comment" name="message" placeholder="Escribe tu comentario..."></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-secondary">Enviar</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
